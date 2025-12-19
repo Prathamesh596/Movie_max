@@ -1,5 +1,4 @@
 import React from 'react';
-import TeamSection from './TeamSection';
 import PageHero from '../../components/PageHero';
 
 const AboutUs = () => {
@@ -61,7 +60,6 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-            <TeamSection />
         </>
     );
 };
