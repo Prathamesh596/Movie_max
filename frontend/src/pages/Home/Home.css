@@ -1,0 +1,43 @@
+.slick-next:before, .slick-prev:before{
+    color: black;
+}
+
+.slick-slide{
+    padding: 0 10px;
+}
+
+/* Home page visuals */
+.hero-banner {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+}
+.hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.hero-content {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    color: #fff;
+    max-width: 40%;
+}
+.hero-content h1{ font-size: 2.5rem; font-weight: 700; }
+.section-title{ margin: 2rem 0 1rem 0; font-weight:700; }
+.movie-card { position: relative; overflow: hidden; border-radius:8px; }
+.movie-card img{ transition: transform .3s ease; width:100%; height:320px; object-fit:cover; display:block }
+.movie-card:hover img{ transform: scale(1.07); }
+.movie-overlay{ position:absolute; left:0; right:0; bottom:0; padding:10px; background: linear-gradient(0deg, rgba(0,0,0,0.8), transparent); color:#fff }
+.placeholder { background: #ddd; width:100%; height:320px; display:flex; align-items:center; justify-content:center; color:#888 }
+
+@media (max-width: 768px){
+    .hero-content{ max-width: 90%; top: 10%; }
+    .movie-card img, .placeholder{ height:220px }
+}
